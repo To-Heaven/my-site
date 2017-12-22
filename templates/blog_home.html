@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="container">
+    {% for article in articles %}
+        <div class="pre-article-view">
+            <h3><a href="{% url 'blog_article' article_id=article.id %}">{{ article.article_title }}</a></h3>
+            <p><span><strong>摘要:</strong></span>{{ article.content|striptags|truncatechars:350 }}</p>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

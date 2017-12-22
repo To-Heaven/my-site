@@ -1,0 +1,207 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>王子豪的个人网站</title>
+    <link rel="stylesheet" href="{% static '/plugins/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/font/css/font-awesome.min.css' %}">
+    <style>
+        .header-icon {
+            margin-top: 40px;
+
+        }
+
+        .header-icon i {
+            color: #FBBC05
+        }
+
+        .big {
+            font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+            font-size: 70px;
+            letter-spacing: 0.15em;
+            font-weight: 100;
+        }
+
+        .title {
+            margin-top: 40px;
+
+        }
+
+        a.navigation {
+            text-decoration: none;
+            color: #455c66;
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+        }
+
+        a.navigation:hover {
+            color: #4285F4;
+        }
+
+        .content {
+            margin-top: 40px;
+            font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+            font-size: 20px;
+            letter-spacing: 0.05em;
+            font-weight: 100;
+        }
+
+        .page-footer {
+            background-color: gainsboro;
+            width: 100%;
+            height: 50px;
+            margin-top: 150px;
+        }
+
+        .site-navegation {
+            margin-top: 10px;
+        }
+
+        .navegation {
+            margin-left: 20px;
+            display: inline-block;
+        }
+
+        .footer span {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .fa {
+            margin-right: 10px;
+            font-size: 20px;
+            color: #adadad;
+        }
+
+        .fa:hover {
+            color: black;
+        }
+
+        a.navigation-a {
+            color: dimgray;
+            text-decoration: none;
+        }
+
+        a.navigation-a:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+        .page-footer {
+            border-top: 1px solid #ECECEC;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: whitesmoke;
+        }
+
+        .fa-weixin:hover {
+            color: #34A853;
+        }
+
+        .fa-envelope:hover {
+            color: #EA4335;
+        }
+
+        .fa-github:hover {
+            color: #4285F4;
+        }
+
+        .fa-qq:hover {
+            color: #F27EF4;
+        }
+
+        .footer-left {
+            width: 30%;
+            line-height: 50px;
+            margin-left: 25px;
+            height: 50px;
+            color: #444444;
+            font-weight: bold;
+            font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+        }
+
+        .footer-left, a {
+            display: inline-block;
+            padding: 0 10px;
+            color: #666;
+            text-decoration: none !important;;
+            font-weight: 100 !important;;
+        }
+        .footer-left a:hover{
+            color: #4285F4 !important;
+            font-weight: bold !important;
+        }
+        .footer-middle {
+            width: 40%;
+            height: 50px;
+            display: inline-block;
+            text-align: center;
+            line-height: 50px;
+            color: #666;
+            font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+        }
+        .hello{
+            position: absolute;
+
+            bottom: 220px;
+            left: 200px;
+            right: 200px;
+        }
+        .hello-content{
+            font: 17px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;
+            letter-spacing: 0.1em;
+            margin-bottom: 0;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="col-sm-2 col-sm-offset-10  header-icon">
+        <i class="fa fa-weixin" aria-hidden="true"></i>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <i class="fa fa-qq" aria-hidden="true"></i>
+        <i class="fa fa-github" aria-hidden="true"></i>
+    </div>
+    <div class="col-sm-12 text-center title">
+        <span class="big">
+            <span style="color: #34A853">ziawang<span style="color: #FBBC05">'s</span></span>
+
+            <span style="color: #EA4335">site</span>
+        </span>
+    </div>
+    <div class="col-sm-4 col-sm-offset-4" style="margin-top: 30px">
+        <div class="col-sm-4 text-center"><a href="/blog/" class="navigation">blog</a></div>
+        <div class="col-sm-4 text-center"><a href="" class="navigation">about</a></div>
+        <div class="col-sm-4 text-center"><a href="" class="navigation">ziawang</a></div>
+    </div>
+    <div class="hello">
+            <p class="hello-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi guys!&nbsp;你是本站的第{{ site.access_count }}位访问者。
+            </p>
+            <p class="hello-content">
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp非常高兴你能来到这里，这儿是我个人在Web开发和学习过程中一些知识和经验的总结，如果你发现了
+                一些错误，请通过右上角联系方式联系我，我会及时改正哒。
+            </p>
+    </div>
+</div>
+<div class="page-footer">
+    <div class="footer-left">
+        <span>Site navigation:&nbsp;</span>
+        <span><a href="">python org</a></span>
+        <span><a href="">Flask</a></span>
+        <span><a href="">Django</a></span>
+    </div>
+    <div class="footer-middle">
+        <span>王子豪的个人网站&nbsp;&nbsp;@2017-2018</span>
+    </div>
+
+</div>
+<script src="{% static '/js/jquery-1.12.4.min.js' %}"></script>
+<script src="{% static '/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+</html>
