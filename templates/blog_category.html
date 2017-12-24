@@ -17,7 +17,9 @@
                 </div>
                 <div class="per-menu">
                     {% for article in category.article_set.all %}
-                        <div class="per-article"><a href="{% url 'blog_article' article_id=article.id %}">{{ article.article_title }}</a></div>
+                        <div class="per-article"><a
+                                href="{% url 'blog_article' article_id=article.id %}">{{ article.article_title }}</a>
+                        </div>
                     {% endfor %}
                 </div>
             {% endfor %}
@@ -26,13 +28,15 @@
     </div>
     <div class="col-sm-10 content">
         <div class="article-content">
-                        {% for article in articles %}
+            {% for article in articles %}
                 <div class="pre-article-view">
                     <h3><a href="{% url 'blog_article' article_id=article.id %}">{{ article.article_title }}</a></h3>
                     <p><span><strong>摘要:</strong></span>{{ article.content|striptags|truncatechars:350 }}</p>
                 </div>
             {% endfor %}
-
         </div>
+        <ul class="pagination pull-right">
+            {{ page_obj.bootstrap_page_html|safe }}
+        </ul>
     </div>
 {% endblock %}
