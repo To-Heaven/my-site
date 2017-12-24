@@ -47,27 +47,40 @@
 }
 
 .per-menu {
-    margin-top: 15px;
-    margin-left: 50px;
+    margin-top: 10px;
+    margin-left: 35px;
 }
 
 .per-article {
     color: black;
     font-size: 13px;
     font-weight: bold;
+    padding: 3px 0;
 }
 
 .per-article:hover {
-    background-color: gainsboro;
+    background-color: rgba(247, 247, 247, 0.57);
 }
 
 .article-content {
     margin-left: 30px;
 }
 
+.navbar-default {
+    background-color: rgba(247, 247, 247, 0.57) !important;
+    border-color: #e8e8e8 !important;
+}
+
+
+
 #nav-li {
     margin-top: 8px;
 }
+
+.fa-paw:hover{
+    color: #EA4335;
+}
+
 
 p, blockquote, ul, ol, dl, table, pre {
     margin: 15px 0;
@@ -88,6 +101,7 @@ h1 {
     font-size: 24px;
     color: #000;
 }
+
 
 h2 {
     font-size: 20px;
