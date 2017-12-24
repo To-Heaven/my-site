@@ -132,4 +132,5 @@ STATICFILES_DIRS = [
 ]
 
 
-ALLOWED_HOSTS = ['172.96.203.6']
+ALLOWED_HOSTS = ['172.96.203.6', 'www.ziawang.com', 'ziawang.com']
+
