@@ -79,9 +79,9 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li id="nav-li">
-                    <form class="navbar-form navbar-left">
+                    <form class="navbar-form navbar-left" action="/blog/" method="get">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="站内搜索">
+                            <input type="text" name="article_title__contains" class="form-control" placeholder="搜索文章名">
                         </div>
                         <button type="submit" class="btn btn-default">search</button>
                     </form>
@@ -91,7 +91,6 @@
     </div>
 </nav>
 <div class="main">
-
     <div class="container-fluid">
         <span id="scroll-top"></span>
         {% block main %}
@@ -102,6 +101,7 @@
     <i class="fa fa-angle-double-up" aria-hidden="true" title="回到顶部"></i>
 </div>
 </div>
+
 <script src="{% static '/js/jquery-1.12.4.min.js' %}"></script>
 <script src="{% static '/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/base.js' %}"></script>
