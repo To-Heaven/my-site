@@ -1,0 +1,133 @@
+.header-icon {
+    margin-top: 40px;
+}
+
+.header-icon i {
+    color: #FBBC05
+}
+
+.big {
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    font-size: 70px;
+    letter-spacing: 0.15em;
+    font-weight: 100;
+}
+
+.title {
+    margin-top: 40px;
+
+}
+
+a.navigation {
+    text-decoration: none;
+    color: #455c66;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+a.navigation:hover {
+    color: #4285F4;
+}
+
+
+
+.footer span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.fa {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #adadad;
+}
+
+.fa:hover {
+    color: black;
+}
+
+a.navigation-a {
+    color: dimgray;
+    text-decoration: none;
+}
+
+a.navigation-a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.page-footer {
+    border-top: 1px solid #ECECEC;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: whitesmoke;
+}
+
+.fa-weixin:hover {
+    color: #34A853;
+}
+
+.fa-envelope:hover {
+    color: #EA4335;
+}
+
+.fa-github:hover {
+    color: #4285F4;
+}
+
+.fa-qq:hover {
+    color: #F27EF4;
+}
+
+.footer-left {
+    width: 30%;
+    line-height: 50px;
+    margin-left: 25px;
+    height: 50px;
+    color: #444444;
+    font-weight: bold;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+.footer-left, a {
+    display: inline-block;
+    padding: 0 10px;
+    color: #666;
+    text-decoration: none !important;;
+    font-weight: 100 !important;;
+}
+
+.footer-left a:hover {
+    color: #4285F4 !important;
+    font-weight: bold !important;
+}
+
+.footer-middle {
+    width: 40%;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    color: #666;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+.hello {
+    position: absolute;
+
+    bottom: 220px;
+    left: 200px;
+    right: 200px;
+}
+
+.hello-content {
+    font: 17px/1.5 'Microsoft YaHei', arial, tahoma, \5b8b\4f53, sans-serif;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+    line-height: 30px;
+    /*color: #4d564a;*/
+    color: #56341f;
+}
