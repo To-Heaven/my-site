@@ -80,7 +80,8 @@ DATABASES = {
         'NAME': 'mysite',
         'USER': 'ziawang',
         'PASSWORD': 'passmysql',
-        'HOST': '172.96.203.6',
+        # 'HOST': '172.96.203.6',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
@@ -129,3 +130,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static', 'blog')
 ]
+
+ALLOWED_HOSTS = ['172.96.203.6']
