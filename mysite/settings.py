@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'blog.middlewares.count_login_middleware.CountLoginMiddle'
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -132,5 +133,10 @@ STATICFILES_DIRS = [
 ]
 
 
-ALLOWED_HOSTS = ['172.96.203.6', 'www.ziawang.com', 'ziawang.com']
+ALLOWED_HOSTS = [
+    '172.96.203.6',
+    'www.ziawang.com',
+    'ziawang.com',
+    '127.0.0.1',
+]
 
