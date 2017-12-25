@@ -17,7 +17,7 @@
                 </div>
                 <div class="per-menu">
                     {% for article in category.article_set.all %}
-                        <div class="per-article"><a href="">{{ article.article_title }}</a></div>
+                        <div class="per-article"><a href="{% url 'blog_article' article_id=article.id %}">{{ article.article_title }}</a></div>
                     {% endfor %}
 
                 </div>
