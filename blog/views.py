@@ -52,7 +52,8 @@ def blog_category(request, site_category=None):
     )
     return render(request, 'blog_category.html', {"articles": articles[page_obj.start:page_obj.end],
                                                   "page_obj": page_obj,
-                                                  "article_category_list": article_category_list})
+                                                  "article_category_list": article_category_list,
+                                                  'site_category': site_category})
 
 
 def blog_article(request, article_id=None):
