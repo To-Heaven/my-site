@@ -19,6 +19,19 @@
     right: 30px;
 }
 
+#back-to-top:hover{
+        width: 35px;
+    height: 35px;
+    border-radius: 10%;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: black;
+}
+
 .navbar-brand i {
     display: inline-block;
 }
