@@ -131,3 +131,11 @@ a.navigation-a:hover {
     /*color: #4d564a;*/
     color: #56341f;
 }
+
+.show-info-image{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    right: 160px;
+    top: 82px;
+}
