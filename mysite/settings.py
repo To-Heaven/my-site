@@ -140,3 +140,5 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
 ]
 
+MEDIA_ROOT = os.path.join(BASE_DIR, "blog", "media", "info")
+MEDIA_URL = "/media/"
