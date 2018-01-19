@@ -83,13 +83,18 @@ a.navigation-a:hover {
 }
 
 .footer-left {
-    width: 30%;
+    /*width: 30%;*/
     line-height: 50px;
-    margin-left: 25px;
+    /*margin-left: 25px;*/
     height: 50px;
     color: #444444;
     font-weight: bold;
     font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+.header-icon a{
+    display: inline-block;
+    padding: 0;
 }
 
 .footer-left, a {
@@ -106,7 +111,7 @@ a.navigation-a:hover {
 }
 
 .footer-middle {
-    width: 40%;
+    /*width: 40%;*/
     height: 50px;
     display: inline-block;
     text-align: center;
@@ -116,17 +121,12 @@ a.navigation-a:hover {
 }
 
 .hello {
-    position: absolute;
-
-    bottom: 220px;
-    left: 200px;
-    right: 200px;
+    margin-top: 50px;
 }
 
 .hello-content {
     font: 17px/1.5 'Microsoft YaHei', arial, tahoma, \5b8b\4f53, sans-serif;
     letter-spacing: 0.1em;
-    margin-bottom: 0;
     line-height: 30px;
     /*color: #4d564a;*/
     color: #56341f;
