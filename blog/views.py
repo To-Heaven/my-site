@@ -47,8 +47,8 @@ def blog_category(request, site_category=None):
         base_url=request.path_info,
         obj_count=articles.count(),
         params=request.GET,
-        per_page_count=6,
-        init_page_count=5,
+        per_page_count=10,
+        init_page_count=11,
     )
     return render(request, 'blog_category.html', {"articles": articles[page_obj.start:page_obj.end],
                                                   "page_obj": page_obj,
