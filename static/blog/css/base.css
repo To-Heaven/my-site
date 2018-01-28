@@ -2,6 +2,13 @@
     display: none;
 }
 
+body{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
 .fa-angle-double-up{
     font-size: 25px;
     line-height: 35px;
