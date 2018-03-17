@@ -15,7 +15,7 @@
                         {{ category.article_category_title }}
                     </span>
                 </div>
-                <div class="per-menu">
+                <div class="per-menu hides">
                     {% for article in category.article_set.all %}
                         <div class="per-article"><a
                                 href="{% url 'blog_article' article_id=article.id %}">{{ article.article_title }}</a>
@@ -40,3 +40,4 @@
         </ul>
     </div>
 {% endblock %}
+

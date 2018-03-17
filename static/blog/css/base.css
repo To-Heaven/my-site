@@ -1,3 +1,63 @@
+.footer-left { 
+    line-height: 50px; 
+    height: 50px;
+    color: #444444;
+    font-weight: bold;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+ .page-footer {
+    border-top: 1px solid #ECECEC;  
+    background-color: whitesmoke;
+}
+
+
+
+.footer-left, a {
+    display: inline-block;
+    padding: 0 10px;
+    color: #666 !important;
+    text-decoration: none !important;;
+    font-weight: 100 !important;;
+}
+
+.nav li a{
+    font-weight: bolder !important;
+}
+
+.pre-article-view a{
+    color: #4285F4 !important;
+    font:17px/1.5 'Microsoft YaHei', arial, tahoma, \5b8b\4f53, sans-serif;
+    font-weight: bold !important;
+}
+
+.per-article a{
+    font-weight: bold !important;
+    color: #4285F4 !important;
+}
+
+.mycontainer-fluid {
+    padding: 0 !important;
+}
+
+.footer-left a:hover {
+    color: #4285F4 !important;
+    font-weight: bold !important;
+}
+
+.footer-middle { 
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    color: #666;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+.menu {
+        border-right: 1px solid #e1e1e1;
+}
+
 .hides{
     display: none;
 }
@@ -23,6 +83,7 @@ user-select: none;
     opacity: 0.5;
     position: fixed;
     bottom: 30px;
+    z-index: 1000;
     right: 30px;
 }
 
@@ -53,7 +114,6 @@ user-select: none;
 
 .content {
     height: 100%;
-    border-left: 1px solid silver;
 }
 
 .menu-title {
@@ -170,7 +230,7 @@ a:hover {
 }
 
 /* LISTS
-=============================================================================*/
+ * =============================================================================*/
 
 ul, ol {
     padding-left: 30px;
@@ -194,8 +254,7 @@ dl {
 }
 
 dl dt {
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 14px;    font-weight: bold;
     font-style: italic;
     padding: 0;
     margin: 15px 0 5px;
@@ -227,7 +286,7 @@ dl dd > :last-child {
 }
 
 /* CODE
-=============================================================================*/
+ * =============================================================================*/
 
 pre, code, tt {
     font-size: 12px;
@@ -285,7 +344,7 @@ kbd {
 }
 
 /* QUOTES
-=============================================================================*/
+ * =============================================================================*/
 
 blockquote {
     border-left: 4px solid #DDD;
@@ -302,7 +361,7 @@ blockquote > :last-child {
 }
 
 /* HORIZONTAL RULES
-=============================================================================*/
+ * =============================================================================*/
 
 hr {
     clear: both;
@@ -316,7 +375,7 @@ hr {
 }
 
 /* TABLES
-=============================================================================*/
+ * =============================================================================*/
 
 table th {
     font-weight: bold;
@@ -337,7 +396,7 @@ table tr:nth-child(2n) {
 }
 
 /* IMAGES
-=============================================================================*/
+ * =============================================================================*/
 
 img {
     max-width: 100%
@@ -773,3 +832,4 @@ img {
     margin-right: 3px;
     vertical-align: 1px;
 }
+
